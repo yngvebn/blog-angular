@@ -9,10 +9,10 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
 </head>
 <body ng-app="app">
-    <div class="body-content">
+    <div ng-controller="Home">
         <input type='text' ng-model='text'>
         {{text}}
-
+        <button ng-click="showTextValue()">Show the value of $scope.text</button>
     </div>
 
     @Scripts.Render("~/js/lib")
