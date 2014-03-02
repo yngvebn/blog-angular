@@ -111,6 +111,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Public\css\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -124,11 +125,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\app.js" />
+    <Content Include="app\app.routes.js" />
+    <Content Include="app\Home\Home.html" />
     <Content Include="app\Home\Home.js" />
+    <Content Include="app\Navbar\Navbar.html" />
+    <Content Include="app\Navbar\Navbar.js" />
+    <Content Include="app\Search\Results.html" />
+    <Content Include="app\Search\Results.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Public\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Public\bootstrap\css\bootstrap.css" />
+    <Content Include="Public\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Public\bootstrap\css\cover.css" />
+    <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Public\bootstrap\js\bootstrap.js" />
+    <Content Include="Public\bootstrap\js\bootstrap.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -150,6 +166,10 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Scripts\angular-route.min.js.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

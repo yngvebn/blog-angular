@@ -11,6 +11,8 @@ namespace Web
             bundles.Add(new ScriptBundle("~/js/lib").Include("~/Scripts/angular.js").IncludeDirectory("~/Scripts/", "*.js"));
 
             bundles.Add(new ScriptBundle("~/js/app").Include("~/js/app/app.js").IncludeDirectory("~/app", "*.js", true));
+
+            bundles.Add(new StyleBundle("~/css/lib").IncludeDirectory("~/Public/bootstrap/css", "*.css"));
         }
     }
 }
