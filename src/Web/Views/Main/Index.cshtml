@@ -7,14 +7,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/css/lib")
 </head>
 <body ng-app="app">
-    <div ng-controller="Home">
-        <input type='text' ng-model='text'>
-        {{text}}
-        <button ng-click="showTextValue()">Show the value of $scope.text</button>
+
+    <div ng-include="'/app/navbar/navbar.html'" ng-controller="Navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     </div>
 
+    <div class="container" ng-view>     
+    </div>
+
+    <div class="container">
+        <hr>
+
+        <footer>
+            <p>&copy; Company 2014</p>
+        </footer>
+    </div> <!-- /container -->
     @Scripts.Render("~/js/lib")
     @Scripts.Render("~/js/app")
 </body>
