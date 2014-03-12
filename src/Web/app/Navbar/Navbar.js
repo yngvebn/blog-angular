@@ -1,9 +1,7 @@
 ﻿angular.module('app').controller('Navbar',
-    ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
+    ['$scope', '$location',  function($scope, $location) {
         $scope.search = function(term) {
-            $timeout(function() {
-                $location.path('/search/results').search('q', term);
-            });
+            $location.path('/search/results').search('q', term);
         };
     }]
 );
