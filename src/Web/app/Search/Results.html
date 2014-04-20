@@ -1,1 +1,8 @@
 ﻿<h3>You searched for {{searchTerm}}</h3>
+
+<h4>{{results.length}} match(es)</h4>
+<ul>
+    <li ng-repeat="person in results">
+        {{person.name.last}}, {{person.name.first}}
+    </li>
+</ul>

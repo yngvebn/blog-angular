@@ -130,8 +130,10 @@
     <Content Include="app\Home\Home.js" />
     <Content Include="app\Navbar\Navbar.html" />
     <Content Include="app\Navbar\Navbar.js" />
+    <Content Include="app\Search\PeopleSearch.js" />
     <Content Include="app\Search\Results.html" />
     <Content Include="app\Search\Results.js" />
+    <Content Include="app\TestData\People.js" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Public\bootstrap\css\bootstrap-theme.css" />
@@ -147,6 +149,8 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\underscore.js" />
+    <Content Include="Scripts\underscore.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -170,6 +174,7 @@
     <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Public\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Scripts\angular-route.min.js.map" />
+    <Content Include="Scripts\underscore.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
