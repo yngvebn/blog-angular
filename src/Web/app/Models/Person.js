@@ -10,5 +10,5 @@
         }
     };
 
-    angular.module('app').value('Person', Person);
+    angular.module('app').constant('Person', Person);
 }());

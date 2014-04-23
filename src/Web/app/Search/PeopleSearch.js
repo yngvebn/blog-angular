@@ -5,14 +5,7 @@
                 person.name.last.indexOf(term) > -1;
         });
 
-        return mapper.map(searchResults, Person, {
-            firstName: function() {
-                return this.name.first;
-            },
-            lastName: function() {
-                return this.name.last;
-            }
-        });
+        return mapper.map(searchResults, Person);
     }
 
     return {

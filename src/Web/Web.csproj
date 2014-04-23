@@ -127,12 +127,14 @@
     <Content Include="app\app.js" />
     <Content Include="app\app.routes.js" />
     <Content Include="app\Common\Mapper.js" />
+    <Content Include="app\Common\MappingProvider.js" />
     <Content Include="app\Home\Home.html" />
     <Content Include="app\Home\Home.js" />
+    <Content Include="app\Models\Person.mapping.js" />
     <Content Include="app\Navbar\Navbar.html" />
     <Content Include="app\Navbar\Navbar.js" />
     <Content Include="app\Search\PeopleSearch.js" />
-    <Content Include="app\Search\Person.js" />
+    <Content Include="app\Models\Person.js" />
     <Content Include="app\Search\Results.html" />
     <Content Include="app\Search\Results.js" />
     <Content Include="app\TestData\People.js" />

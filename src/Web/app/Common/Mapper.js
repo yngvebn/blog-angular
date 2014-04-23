@@ -1,5 +1,5 @@
-﻿angular.module('app').service('Mapper', [
-    function() {
+﻿angular.module('app').service('Mapper', ['Mapping',
+    function(mappingConfig) {
         var transformObject = function (jsonResult, constructor, mapping) {
             var model = new constructor(), dest = {};
 
@@ -16,7 +16,9 @@
             return model;
         };
 
-        this.map = function (jsonResult, constructor, mapping) {
+        this.map = function (jsonResult, constructor) {
+            var mapping = mappingConfig(constructor);
+            console.log(mapping);
             if (angular.isArray(jsonResult)) {
                 var models = [];
                 angular.forEach(jsonResult, function (object) {
